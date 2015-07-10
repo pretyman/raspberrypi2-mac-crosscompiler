@@ -1,8 +1,9 @@
-# RaspberryPi 2 Cross Compile for Mac OS X
+# RaspberryPi 2 Cross Compile for Mac OS
 
 ## Important: a case-sensitive file system is needed.
 
 1. Create an image with the name `RaspberryPiCrossCompiler` with `Disk Utility`:
+![Create Disk Image](https://raw.githubusercontent.com/wiki/pretyman/raspberrypi2-mac-crosscompiler/CreateDiskImage.png)
  1. Click on *New Image*
  2. *Save As*: `RaspberryPiCrossCompiler` 
  3. Set the following attributes, you *should* set the same name:
