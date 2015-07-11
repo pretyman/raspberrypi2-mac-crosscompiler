@@ -12,5 +12,8 @@
     * Format: Mac OS Extended (*Canse-sensitive*, Journaled)
 2. Go to */Volumes/RaspberryPiCrossCompiler* and run the following magic command line:
 ```bash
-git clone https://github.com/pretyman/raspberrypi2-mac-crosscompiler tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
+git clone https://github.com/pretyman/raspberrypi2-mac-crosscompiler tmp 
+mv tmp/.git . 
+rm -rf tmp 
+git reset --hard
 ```
