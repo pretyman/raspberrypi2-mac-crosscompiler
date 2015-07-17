@@ -18,3 +18,12 @@ mv tmp/.git .
 rm -rf tmp 
 git reset --hard
 ```
+## Using the cross compiler
+This cross compiler is supported by the [polly](https://github.com/ruslo/polly) toolchain collection and [hunter](https://github.com/ruslo/hunter) package manager. To use it, the following environment variables must be setup:
+```
+export RASPBERRYPI_CROSS_COMPILE_TOOLCHAIN_PATH=/Volumes/RaspberryPiCrossCompiler/x-tools/arm-unknown-linux-gnueabihf/bin/
+export RASPBERRYPI_CROSS_COMPILE_TOOLCHAIN_PREFIX=arm-unknown-linux-gnueabihf
+export RASPBERRYPI_CROSS_COMPILE_SYSROOT=/Volumes/RaspberryPiCrossCompiler/x-tools/arm-unknown-linux-gnueabihf/arm-unknown-linux-gnueabihf/sysroot
+```
+
+Then `build.py --toolchain raspberrypi2-cxx11` of [polly](https://github.com/ruslo/polly) can be used to build your CMake based project.
